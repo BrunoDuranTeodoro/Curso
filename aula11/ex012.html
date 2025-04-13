@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <H1>Você é Brasileiro?</H1>
+
+    Digite sua nacionalidade: <input type="text" id="nacionalidade"> 
+    <input type="button" value="Envie" onclick="enviar()">
+    <div id="res"></div>
+
+    <script>
+
+        function enviar(){
+            var nascionalidade = document.getElementById('nacionalidade')
+            var resultado = document.getElementById('res')
+
+            if(nascionalidade.value == 'Brasil'){
+                resultado.innerHTML = 'Você é br'
+            }else{
+                resultado.innerHTML = `Você é ${nacionalidade.value} entao não é br`
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

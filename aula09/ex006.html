@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos</title>
+    <style>
+        body{
+            background-color: rgb(25, 0, 255);
+            color:white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h2>Iniciando os estudo em DOM</h2>
+    <p>Primeira vez aprendendo <strong>DOM</strong> em JavaScript<Strong> com a dudoca<br></Strong></p>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+    <div id="query">Clique em mim</div>
+    <br>
+
+    <script>
+        var bruno = window.document.getElementsByTagName('p')[0]
+        var corpo = window.document.body
+        var q = window.document.querySelector('div#query')
+        var d = window.document.getElementById('msg')
+
+        window.document.write(bruno.innerText) // Pega somente a tag filha
+        document.write(bruno.innerHTML)        // Pega tudo
+        
+
+        bruno.style.color = 'yellow'
+        corpo.style.background = 'green'
+        d.style.background = 'red'
+        d.innerText = 'Aguardando Click...'
+
+        q.style.background = 'purple'
+        
+
+    </script>
+</body>
+</html>

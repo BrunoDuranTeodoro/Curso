@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você foi multado?</title>
+    <style>
+        body{
+            text-align: center;
+            font:normal 15pt Arial;
+            background-color: rgb(255, 255, 255);
+        }
+        div#resultado{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de velocidade</h1>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="resultado">Resultado: </div>
+
+    <script>
+
+        function enviar(){
+        var velo = document.getElementById('vel')
+        var resultado = window.document.getElementById('resultado')
+        var vel = Number(velo.value)
+
+        if(vel > 60){
+            resultado.innerHTML = `Você passou a ${vel}KH/h e você foi multado!`
+        }else{
+            resultado.innerHTML = `Parabéns você está andando na velocidade`
+        }
+        }
+
+
+    </script>
+</body>
+</html>
