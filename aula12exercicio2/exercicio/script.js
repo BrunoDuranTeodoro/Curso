@@ -10,9 +10,7 @@ function verificar(){
    }else{
     var fsex = document.getElementsByName('radsex')
     var idade = ano - Number(fano.value) //PEGA O ANO - O TEXT QUE FOI INSERIDO (LEMBRAR DE TRANSFORMAR EM NUMBER)
-
     var genero = '' // DECLARA UMA VARIAVEL GENERO VAZIA
-
     var img = document.createElement('img') //CRIA UMA IMAGEM SEM PRECISAR DO HTML
     img.setAttribute('id', 'foto') //ATRIBUI ID FOTO NELA
 
